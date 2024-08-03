@@ -1,0 +1,5 @@
+.client_Bg_Image{
+    background-image: url(../../images//clientBanner.webp);
+  background-attachment: fixed;
+  position: relative;
+}

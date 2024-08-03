@@ -1,0 +1,71 @@
+.number_Bg_Image {
+  background-image: url(../../images//Numberbanner.webp);
+  background-attachment: fixed;
+  position: relative;
+}
+.counter-element {
+  padding-right: 10px;
+}
+.countercount {
+  font-size: 50px;
+  line-height: 60px;
+  white-space: nowrap;
+  font-weight: 100;
+}
+.odometer.odometer-auto-theme, .contentIcon{
+  font-weight: 400;
+  font-family: var(--font);
+}
+.numbercolumn {
+  border-top: 3px solid var(--secondary);
+  max-width: 250px;
+}
+.countercont p {
+  letter-spacing: var(--letter2);
+  text-transform: var(--uppercase);
+  font-size: small;
+  line-height: var(--smallHeight);
+}
+.numberrow {
+  z-index: 1;
+  justify-content: space-evenly;
+}
+.blueLayer:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: var(--primary);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+}
+@media (max-width:1280px) {
+  .numbercolumn {
+    width: 30%;
+}
+
+.numberrow {
+    row-gap: 20px;
+}
+}
+@media (max-width:680px){
+  .numbercolumn {
+    width: 50%;
+}
+.number_Bg_Image{
+  background-attachment: inherit;
+  background-position: center;
+}
+}
+@media (max-width:480px){
+  .numbercolumn{
+    width: 100%;
+  }
+  .countercount{
+    font-size: 36px;
+    line-height: 40px;
+  }
+}

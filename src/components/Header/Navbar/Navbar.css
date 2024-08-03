@@ -1,0 +1,331 @@
+.menuStrip ul li {
+    font-size: var(--smallFont);
+    text-transform: var(--uppercase);
+    line-height: var(--smallHeight);
+    letter-spacing: 1.5px;
+    padding: 0 12px;
+    transition: ease all 0.2s;
+    position: relative;
+    color: var(--white);
+}
+.menuStrip ul{
+    display: flex;
+}
+.navbarChild{
+    display: flex;
+    justify-content: end;
+}
+.menuStrip ul li:hover {
+    margin-top: -5px;
+    color: var(--secondary);
+}
+
+.menus.active .hemburgr {
+    background: transparent;
+    top: inherit;
+    position: static;
+    height: auto;
+    float: left;
+}
+.menu_second_child{
+    position: relative;
+    z-index: 11;
+}
+.hamburger {
+    width: 25px;
+    height: 30px;
+    transform: rotate(0deg);
+    position: relative;
+    float: right;
+    z-index: 1;
+    right: 0;
+    background: transparent;
+    border: none;
+    outline: 0;
+    display: flex;
+    justify-content: flex-end;
+    transition: ease all 0.1s;
+}
+
+.hamburger span:nth-child(2) {
+    left: 50%;
+}
+
+.hamburger span:nth-child(3) {
+    left: 100%;
+}
+
+.hamburger span {
+    display: block;
+    width: 2px;
+    height: 100%;
+    border-radius: 1px;
+    left: 0;
+    top: 0;
+    background: var(--white);
+    transition: .5s ease-in-out;
+    float: left;
+    position: absolute;
+}
+
+.hamburger.active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0;
+    left: 12px;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 0;
+    left: 12px;
+}
+
+.dropdown-content {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    transition: ease all 0.5s;
+    z-index: 1;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    top: 13%;
+    padding-top: 15px;
+}
+
+.submenu {
+    background: var(--white);
+    height: 0;
+    transition: ease all 0.6s;
+    float: right;
+    padding: 50px;
+    width: 95.5vw;
+}
+.submenu_Child {
+    float: right;
+    position: relative;
+    width: 54vw;
+}
+.menuStrip ul li:hover .dropdown-content, .menus.active .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+}
+
+.menuStrip ul li:hover .dropdown-content .submenu, .menus.active .dropdown-content .submenu {
+    height: 500px;
+}
+
+.submenuicons {
+    position: absolute;
+    right: 0;
+    background: var(--white);
+    top: 2%;
+    width: 50%;
+}
+
+.submenu_row svg {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.submenu_row p {
+    margin: 0;
+    color: var(--black70);
+    text-transform: capitalize;
+    font-weight: normal;
+    pointer-events: all;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    background-image: linear-gradient(to right, var(--primary), var(--primary) 50%, var(--black70) 50%);
+    transition: ease all 1s;
+    font-size: medium;
+    line-height: inherit;
+    letter-spacing: 1px;
+}
+
+.submenu_row:hover a p {
+    background-position: 0;
+}
+
+.menuStrip ul li:last-child {
+    padding-right: 0;
+  }
+.submenucontent{
+    width: 40%;
+    padding: 10px 0;
+    border-bottom: dashed 1px rgb(185 185 185 / 30%);
+}
+.submenu_row:last-child .submenucontent{
+    border: 0;
+}
+.hamburger :hover span,
+.menus .dropdown-content li .active {
+    background-color: var(--primary);
+}
+
+.dropdown-content.slideMenu {
+    height: 100%;
+    top: 0;
+    width: 0;
+    background:hsl(0deg 0% 0% / 95%);
+    padding: 0;
+    margin: 0;
+}
+.menuText {
+    font-size: small;
+    letter-spacing: var(--letter3);
+    position: relative;
+    left: 2px;
+}
+.menus.active .dropdown-content.slideMenu {
+    width: 100%;
+}
+.menus .dropdown-content li {
+    letter-spacing: 3px;
+    line-height: 1;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 50%;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.menus .dropdown-content li:last-child {
+    border: none;
+}
+
+.sticky .dropdown-content {
+    top: 100%;
+}
+
+.menus .dropdown-content li .active,
+.medianavbar li.active {
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.menus .dropdown-content li:hover a, .menuStrip ul li span a.active {
+    color: #10bfa7;
+    font-weight: 600;
+}
+
+.menus .dropdown-content li a.active:hover {
+    color: var(--white);
+}
+
+.menuStrip ul li span {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+}
+.slideMenu ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 20%;
+}
+@media (max-width:1600px) {
+    .menuStrip ul li {
+        padding: 0 10px;
+    }
+
+    .menuStrip ul li:hover .dropdown-content .submenu,
+    .menus.active .dropdown-content .submenu {
+        height: 600px;
+    }
+
+    .dropdown-content {
+        top: 15%;
+    }
+
+    .submenu_row {
+        padding: 5px 0;
+    }
+}
+
+@media (max-width:1280px) {
+    .menuStrip ul li {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width:1380px) {
+
+    .menuStrip ul li:hover .dropdown-content .submenu,
+    .menus.active .dropdown-content .submenu {
+        height: 400px;
+    }
+
+    .dropdown-content {
+        top: 18%;
+    }
+
+    .submenu .col-lg-8.col-12.py-5 {
+        padding: 20px 0 !important;
+    }
+
+    .submenu_Child {
+        max-width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .submenu_row {
+        width: 45%;
+    }
+
+    .submenu_row:last-child {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (max-width:1040px) {
+    .dropdown-content {
+        width: 100%;
+        height: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menuStrip ul li:hover .dropdown-content, .menus.active .dropdown-content{
+        height: 100vh;
+    }
+    .menus .dropdown-content li {
+        width: 100%;
+        border-right: 0;
+        border-bottom: solid 1px #28486b;
+        line-height: 50px;
+    }
+    
+    .menus .dropdown-content li a {
+        padding: 0;
+    }
+    
+    .menus .dropdown-content li .active {
+        background: transparent;
+        color: var(--primary);
+        border-color: var(--primary);
+    }
+    .sticky .dropdown-content {
+        top: 0;
+    }
+}
+@media (max-width:480px) {
+    .hamburger {margin: 0;top: 0px;}
+}

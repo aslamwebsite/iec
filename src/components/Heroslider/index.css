@@ -1,0 +1,80 @@
+.heroSlider .swiper-pagination {
+    bottom: 7%;
+    width: 40%;
+    left: inherit;
+    right: 5%;
+    display: flex;
+    transition: ease all 1s;
+    transition-delay: 0.5s;
+    justify-content: end;
+}
+
+.heroSlider .swiper-pagination .swiper-pagination-bullet {
+    width: 150px;
+    border-radius: 0;
+    margin: 0 10px;
+    height: 2px;
+    background: #b9b9b9;
+    opacity: 1;
+    transition: ease all 2s;
+    transition-duration: 1s;
+}
+
+.heroSlider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--secondary);
+}
+.oddSlide .row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.heroSlider .heading {
+    width: 92%;
+    float: right;
+    background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #0b6791 50%);
+    transform: translateY(0);
+    transition: transform 1s 1s, background-position 1s;
+    pointer-events: all;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+
+.heroSlider .swiper-slide {
+    opacity: 0 !important;
+    transition: opacity 0.5s ease-in-out !important;
+  }
+  
+  .heroSlider .swiper-slide-active {
+    opacity: 1 !important;
+  }
+  .HomesldierbottomShape {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+}
+
+.HomesldierbottomShape path, .HomesldiertopShape path {
+    fill: rgb(255 255 255 / 70%);
+}
+.HomesldiertopShape{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+.oddSlide .HomesldierbottomShape {
+    bottom: inherit;
+    top: 25%;
+}
+
+.oddSlide .HomesldiertopShape {
+    top: inherit;
+    bottom: 25%;
+}
+.heroSlider{
+    height: 100vh;
+}

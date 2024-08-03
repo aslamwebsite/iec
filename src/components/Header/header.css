@@ -1,0 +1,153 @@
+.logo {
+    transition: ease all 0.5s;
+    max-width: 175px;
+    margin: auto;
+}
+
+.logo svg {
+    transition: ease all 0.5s;
+    transition-delay: 0.5s;
+}
+
+header {
+    position: relative;
+    z-index: 9;
+}
+
+.header .container {
+    border-bottom: solid 1px #59889f;
+    padding: 20px 0;
+    transition: ease all 0.5s;
+}
+.header.sticky .container {
+    padding: 10px 0;
+    border: none;
+}
+.header.sticky path.fil3 {
+    fill: #0B6791;
+}
+.header.sticky {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .12);
+    width: 100%;
+    z-index: 3;
+    background: var(--white);
+}
+.sticky .menuStrip ul li {
+    color: var(--black);
+}
+.sticky {
+    animation: smoothScroll 1s forwards;
+    left: 0;
+    position: fixed;
+    top: 0;
+}
+
+.header.sticky .logo {
+    max-width: 160px;
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-40px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@media (max-width:1600px) {
+    .logo {
+        max-width: 250px;
+    }
+}
+
+@media (max-width:1440px) {
+    .header.sticky .logo {
+        width: 75%;
+    }
+}
+
+@media (max-width:1380px) {
+    .header.sticky .logo {
+        width: 65%;
+    }
+}
+
+@media (max-width:1280px) {
+    header {
+        min-height: 15vh;
+    }
+}
+
+@media (max-width:1040px) {
+    .menu_second_child {
+        padding-right: 30px;
+    }
+
+    .logo,
+    .menu_second_child {
+        z-index: 9;
+        position: relative;
+    }
+
+    .logo {
+        padding: 0 20px;
+        border-radius: 5px;
+        background-color: var(--white);
+        max-width: 220px;
+        margin: 10px 0;
+    }
+
+    header {
+        min-height: 100px;
+        height: 100px;
+    }
+
+    .hamburger.active span {
+        background: var(--white);
+    }
+
+    .header,
+    .header.sticky {
+        padding: 0;
+    }
+
+    .header.sticky .logo {
+        width: 100%;
+    }
+
+    .parentbanner h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .parentbanner {
+        padding: 0;
+        min-width: 420px;
+    }
+
+    .heartfelt .blue__circle_heading h4 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width:680px) {
+
+    .header.sticky .logo {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:420px) {
+
+    .logo {
+        padding: 0 10px;
+    }
+
+    .menu_second_child {
+        padding-right: 10px;
+    }
+}

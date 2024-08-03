@@ -1,0 +1,75 @@
+.cardStnComponent {
+    padding: 50px 25px;
+    gap: 25px;
+    border: solid 1px #e4e5e6;
+    height: 500px;
+    width: 90%;
+    margin: auto auto 10% auto;
+}
+.bottomShape, .topShape {
+    position: absolute;
+    left: -5%;
+    top: 0%;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+.topShape {
+    transform: inherit;
+    top: inherit;
+    bottom: -20%;
+    left: inherit;
+    right: -5%;
+}
+.bottomShape path, .topShape path {
+    fill: rgb(241 241 241 / 50%);
+}
+.productContent p {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    font-family: var(--bebas);
+    transition: all .5s ease;
+    overflow: hidden;
+}
+.productKnowmore span {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary);
+    font-family: var(--font);
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 100;
+    border-radius: 100%;
+}
+.productTitle {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: var(--letter1);
+    font-family: var(--font);
+}
+.svgIcon {
+    position: absolute;
+    top: 20%;
+    width: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.svgIcon svg path{
+    fill: var(--white);
+    opacity: 0.4;
+}
+.cardStnComponent h5 {
+    font-size: 44px;
+    line-height: 50px;
+    color: var(--white);
+    text-transform: uppercase;
+    width: 90%;
+    margin: auto;
+    font-family: var(--font);
+}
+.productKnowmore {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}

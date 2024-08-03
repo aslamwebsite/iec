@@ -1,0 +1,7 @@
+.rowFormControl label {
+    font-size: small;
+    color: var(--black70);
+    text-transform: uppercase;
+    line-height: revert;
+    font-family: var(--font);
+}
