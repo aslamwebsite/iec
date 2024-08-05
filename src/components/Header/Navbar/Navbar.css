@@ -163,7 +163,7 @@
   }
 .submenucontent{
     width: 40%;
-    padding: 10px 0;
+    padding: 15px 0;
     border-bottom: dashed 1px rgb(185 185 185 / 30%);
 }
 .submenu_row:last-child .submenucontent{
@@ -207,6 +207,7 @@
 
 .sticky .dropdown-content {
     top: 100%;
+    padding: 0;
 }
 
 .menus .dropdown-content li .active,

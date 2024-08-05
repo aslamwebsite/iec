@@ -23,7 +23,7 @@ const ProListing = ({Data}) => {
                         <Procard Data={product}/>
                     </div>
                     )}
-                    <div className='col-lg-6 col-sm-6 col-12'>
+                    <div className='col-lg-6 col-sm-6 col-12' data-aos="fade-in" data-aos-offset="200" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-sine">
                     <div className='cardStnComponent card bg-secondary position-relative text-center'>
                         <span className='svgIcon'><Quote /></span>
                         <h5>Where power meets precision, our gensets are the perfect fusion.</h5>

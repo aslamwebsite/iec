@@ -10,7 +10,7 @@
 }
 
 header {
-    position: relative;
+    position: absolute;
     z-index: 9;
 }
 
@@ -19,22 +19,48 @@ header {
     padding: 20px 0;
     transition: ease all 0.5s;
 }
+
 .header.sticky .container {
     padding: 10px 0;
     border: none;
 }
+
+.fil0,
+.fil3 {
+    fill: #fefefe;
+    fill-rule: nonzero
+}
+
+.fil3 {
+    fill: #fff
+}
+
+.proHeaderClass .header path.fil3,
 .header.sticky path.fil3 {
     fill: #0B6791;
 }
+
+.proHeaderClass .header .container {
+    border-bottom: solid 1px #dfdfdf;
+}
+
+.proHeaderClass .menuStrip ul li,
+.proHeaderClass .menuStrip ul li a.active,
+.proHeaderClass .navbar [class^="btn-"] {
+    color: var(--black70);
+}
+
 .header.sticky {
     box-shadow: 0 3px 3px rgba(0, 0, 0, .12);
     width: 100%;
     z-index: 3;
     background: var(--white);
 }
+
 .sticky .menuStrip ul li {
     color: var(--black);
 }
+
 .sticky {
     animation: smoothScroll 1s forwards;
     left: 0;

@@ -19,9 +19,6 @@ const Index = (props) => {
     {...props}
   >
     <defs>
-      <style>
-        {".fil0,.fil3{fill:#fefefe;fill-rule:nonzero}.fil3{fill:#fff}"}
-      </style>
     </defs>
     <g id="Layer_x0020_1">
       <g id="_2673718726512">

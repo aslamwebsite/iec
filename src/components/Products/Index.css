@@ -31,6 +31,12 @@
     transition: all .5s ease;
     overflow: hidden;
 }
+
+.productKnowmore {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
 .productKnowmore span {
     width: 50px;
     height: 50px;
@@ -40,6 +46,22 @@
     font-size: 36px;
     font-weight: 100;
     border-radius: 100%;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.productKnowmore span:hover{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    background: var(--primary);
 }
 .productTitle {
     font-size: 30px;
@@ -67,9 +89,21 @@
     width: 90%;
     margin: auto;
     font-family: var(--font);
+   
 }
-.productKnowmore {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
+.productContent, .cardStnComponent h5{
+    background-image: linear-gradient(to right, #ffffff, #ffffff 50%, transparent 50%);
+    transform: translateX(0);
+    transition: transform 1s 1s, background-position 1s;
+    pointer-events: all;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+.productContent{
+    background-image: linear-gradient(to right, var(--black70), var(--black70) 50%, transparent 50%);
+}
+.aos-init.aos-animate .cardStnComponent h5, .aos-init.aos-animate .productContent {
+    background-position: 0;
 }

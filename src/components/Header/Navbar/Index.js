@@ -10,15 +10,15 @@ import Product01 from '../../../images/products01.webp'
 
 const menuData = [
   { name: "Home", link: "/" },
-  { name: "About us", link: "/about-us" },
+  { name: "About us", link: "/under-construction" },
   {
     name: "Power Solutions",
-    link: "/our-products",
+    link: "/under-construction",
     submenus: [
       {
         icon: Product01,
         text: "Gas Gensets",
-        link: "/gas-gensets",
+        link: "/under-construction",
       },
       {
         text: "Diesel Gensets",
@@ -37,10 +37,10 @@ const menuData = [
   },
   {
     name: "Services",
-    link: "/services",
+    link: "/under-construction",
   },
   { name: "Manufacturing Plant", link: "/under-construction" },
-  { name: "Clients", link: "/client" },
+  { name: "Clients", link: "/under-construction" },
   { name: "Certifications", link: "/under-construction" },
 ];
 
@@ -64,7 +64,6 @@ const Index = () => {
       <div className="col-12 float-start d-flex justify-content-end gap-3">
         <Outline
           buttonText="Contact us"
-          pageLink="/book-an-appointment"
           _class={'whitetextColor'}
         />
         <Fill buttonText2="Request a Quote" buttonText1="Request a Quote" />
