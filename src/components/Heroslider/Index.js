@@ -12,17 +12,17 @@ const Index = ({ Data }) => {
       <div className='leftMenu'>
         <Mobilenav />
       </div>
-      <div className='col-lg-11 col-sm-12 col-12 float-end'>
+      <div className='col-lg-11 col-sm-12 col-12 float-end h-100'>
         <Swiperslider spaceBetween={1} slidesPerView={1} navigation={false} pagination={{ clickable: true }} timeDelay={'6000'}>
           {Data.map((slide, index) => (
             <div
-              className={`col-12 float-start slideParent ${index % 2 === 0 ? 'evenSlide' : 'oddSlide'}`}
+              className={`col-12 float-start h-100 slideParent ${index % 2 === 0 ? 'evenSlide' : 'oddSlide'}`}
               key={index}
             >
-              <div className='container'>
-                <div className='row flex-center loadeffect'>
-                  <div className='col-lg-7 col-md-7 col-xs-12 col-12'>
-                    <ImageTag ImagePath={slide.imagePath} ImageAlt={slide.imageAlt} />
+              <div className='container h-100'>
+                <div className='row flex-center loadeffect h-100'>
+                  <div className='col-lg-7 col-md-7 col-xs-12 col-12 h-100'>
+                    <ImageTag ImagePath={slide.imagePath} ImageAlt={slide.imageAlt}/>
                     <em className='HomesldierbottomShape'><FillShape /></em>
                   </div>
                   <div className='col-lg-5 col-md-5 col-xs-12 col-12'>

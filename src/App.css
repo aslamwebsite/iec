@@ -17,7 +17,7 @@
   --uppercase: uppercase;
   --letter1: 1px;
   --black70: rgb(0 0 0 / 70%);
-  --container: 1580px;
+  --container: 86%;
   --webcontainer:1120px;
 }
 
@@ -32,6 +32,18 @@ body {
   outline: 0;
   overflow-x: hidden;
   padding: 0;
+  position: relative;
+}
+body:before {
+  content: '';
+  width: 1px;
+  height: 100vh;
+  background:  #59889f;
+  position: fixed;
+  left: 7%;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
 }
 
 * {
@@ -65,6 +77,10 @@ img {
 }
 p {
   line-height: 1.6;
+}
+.container.float-end {
+  max-width: 93%;
+  min-width: 93%;
 }
 .container{
   max-width: var(--container);

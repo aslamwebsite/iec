@@ -147,7 +147,7 @@ input.form-control {
 .customButton, .MuiButton-contained {
   background: transparent;
   box-shadow: inherit;
-  color: var(--black);
+  color: var(--black70);
   font-family: var(--font);
   letter-spacing: var(--letter1);
   border-radius: 0;

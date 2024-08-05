@@ -28,7 +28,7 @@
     flex-direction: row-reverse;
 }
 .heroSlider .heading {
-    width: 92%;
+    width: 96%;
     float: right;
     background-image: linear-gradient(to right, #ffffff, #ffffff 50%, #0b6791 50%);
     transform: translateY(0);

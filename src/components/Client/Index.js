@@ -33,7 +33,7 @@ const Index = ({ Data }) => {
           ))}
         </Swiperslider>
        </div>
-       <div className='topShape'><FillShape /></div>
+    
       </Container>
     </>
   );

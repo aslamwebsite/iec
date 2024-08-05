@@ -13,7 +13,7 @@ const menuData = [
   { name: "About us", link: "/under-construction" },
   {
     name: "Power Solutions",
-    link: "/under-construction",
+    link: "/power-solutions",
     submenus: [
       {
         icon: Product01,

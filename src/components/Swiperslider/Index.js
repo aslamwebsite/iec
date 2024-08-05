@@ -28,6 +28,7 @@ const Swiperslider = ({ children, spaceBetween, slidesPerView, navigation, pagin
       centeredSlides={centeredSlides}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      className='h-100'
     >
       {React.Children.map(children, (child, index) => (
         <SwiperSlide key={index}>
