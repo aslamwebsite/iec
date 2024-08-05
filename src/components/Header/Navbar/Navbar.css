@@ -2,8 +2,8 @@
     font-size: var(--smallFont);
     text-transform: var(--uppercase);
     line-height: var(--smallHeight);
-    letter-spacing: 1.5px;
-    padding: 0 12px;
+    letter-spacing: var(--letter2);
+    padding: 0 10px;
     transition: ease all 0.2s;
     position: relative;
     color: var(--white);
@@ -101,7 +101,7 @@
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
-    top: 13%;
+    top: 12%;
     padding-top: 15px;
 }
 
@@ -111,7 +111,7 @@
     transition: ease all 0.6s;
     float: right;
     padding: 50px;
-    width: 95.5vw;
+    width: 93%;
 }
 .submenu_Child {
     float: right;
