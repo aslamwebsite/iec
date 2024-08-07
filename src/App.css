@@ -95,6 +95,13 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+.fw-600{
+  font-weight: 600 !important;
+}
+.box-shadow-none{
+  box-shadow: none !important;
+}
 .bg-primary{
   background-color: var(--primary) !important;
 }
@@ -192,4 +199,7 @@ main{
 }
 .heroSlider .swiper-slide-active .heading{
 background-position: 0;
+}
+ol {
+  list-style: decimal-leading-zero;
 }

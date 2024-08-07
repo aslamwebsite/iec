@@ -20,7 +20,7 @@
 [class^="btn-"]:hover {
   color: var(--white);
   background-color: var(--primary);
-  border-color: currentColor;
+  border-color: var(--primary);
 }
 
 .navbar [class^="btn-"],

@@ -1,0 +1,18 @@
+.accordionDesign svg{
+    fill: var(--white);
+}
+.accordionDesign div, .accordionDesign div p{
+    font-family: var(--font) !important;
+}
+.accordionDesign div p {
+    letter-spacing: var(--letter1);
+}
+.removeAfter:before{
+    display: none;
+}
+.rowBorder {
+    border-bottom: solid 1px #5595b2 !important;
+}
+.rowBorder:last-child{
+    border: none !important;
+}

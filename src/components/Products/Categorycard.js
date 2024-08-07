@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageTag from '../ImageTag/Index'
 
-const PrcoData = ({Data}) => {
+const Categorycard = ({Data}) => {
   return (
     <>
     
@@ -21,4 +21,4 @@ const PrcoData = ({Data}) => {
   )
 }
 
-export default PrcoData
+export default Categorycard

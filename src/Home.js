@@ -80,7 +80,7 @@ const Numbers = {
     }
   ]
 };
-const product = [
+const Category = [
   {
       imagePath : Image001,
       title : 'Gas Gensets',
@@ -161,7 +161,7 @@ const Home = () => {
       <Heroslider Data={Homebanners} />
       <Overview Data={AboutUs}/>
       <CountLoader Data={Numbers} />
-      <ProListing Data={product}/>
+      <ProListing Data={Category}/>
       <Client Data={ClientData}/>
       <GallerySlider Data={GalleryData}/>
       <BusinessEnquiry />

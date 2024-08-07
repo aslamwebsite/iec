@@ -7,6 +7,8 @@ import Header from './components/Header/Index';
 import Footer from './components/Footer/Index';
 import Undermaintaince from './components/Undermaintaince/Index';
 import ScrollToTop from "./ScrollToTop";
+import Product from './Products';
+import Products from './Products';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <HeaderWithCondition />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/power-solutions' element={<Products />} />
           <Route path='/under-construction' element={<Undermaintaince />} />
         </Routes>
         <Footer />

@@ -8,7 +8,6 @@ import FillShape from '../../images/Vectors/FillShape';
 const Index = ({ Data }) => {
   return (
     <section className='col-12 float-start bg-primary flex-center overflow-hidden heroSlider'>
-
       <div className='leftMenu'>
         <Mobilenav />
       </div>
